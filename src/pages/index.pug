@@ -1,0 +1,12 @@
+include ../components/button/index
+include ../components/input-text/index
+html
+  head
+    meta(charset="utf-8")
+    title top
+  body
+    h1 top
+    +Button('/', 'click')
+    +InputText('text', 'messages', '')
+    a(a href="/tags/") tags
+    script(defer src="./index.js")

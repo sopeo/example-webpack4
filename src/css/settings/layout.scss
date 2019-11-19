@@ -1,0 +1,183 @@
+:root {
+  /* 上揃え & 左揃え */
+
+  @mixin --layout-start-start {
+    -js-display: flex;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  /* 上揃え & 左右中央 */
+
+  @mixin --layout-start-center {
+    -js-display: flex;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  /* 上揃え & 左右スペースを空けて目一杯に広げる */
+
+  @mixin --layout-start-between {
+    -js-display: flex;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  /* 上揃え & 右揃え */
+
+  @mixin --layout-start-end {
+    -js-display: flex;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+
+  /* 天地中央 & 左揃え */
+
+  @mixin --layout-center-start {
+    -js-display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  /* 天地中央 & 左右中央 */
+
+  @mixin --layout-center-center {
+    -js-display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* 天地中央 & 左右スペースを空けて目一杯に広げる */
+
+  @mixin --layout-center-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* 天地中央 & 左右スペースを空けて目一杯に広げる */
+
+  @mixin --layout-center-around {
+    -js-display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  /* 天地中央 & 右揃え */
+
+  @mixin --layout-center-end {
+    -js-display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  /* 天地いっぱいまで広げる & 左揃え */
+
+  @mixin --layout-stretch-start {
+    -js-display: flex;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+
+  /* 天地いっぱいまで広げる & 左右中央 */
+
+  @mixin --layout-stretch-center {
+    -js-display: flex;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  /* 天地いっぱいまで広げる & 左右スペースを空けて目一杯に広げる */
+
+  @mixin --layout-stretch-between {
+    -js-display: flex;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+  /* 天地いっぱいまで広げる & 右揃え */
+
+  @mixin --layout-stretch-end {
+    -js-display: flex;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+  }
+
+  /* 下揃え & 左揃え */
+
+  @mixin --layout-end-start {
+    -js-display: flex;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+
+  /* 下揃え & 左右中央 */
+
+  @mixin --layout-end-center {
+    -js-display: flex;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  /* 下揃え & 左右スペースを空けて目一杯に広げる */
+
+  @mixin --layout-end-between {
+    -js-display: flex;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  /* 下揃え & 右揃え */
+
+  @mixin --layout-end-end {
+    -js-display: flex;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  /* 縦方向 天地中央 & 左揃え */
+
+  @mixin --layout-column-center-start {
+    -js-display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  /* 縦方向 天地中央 & 左右中央 */
+
+  @mixin --layout-column-center-center {
+    -js-display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* 縦方向 天地中央 & 左右いっぱいまで広がる */
+
+  @mixin --layout-column-center-stretch {
+    -js-display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+  }
+}

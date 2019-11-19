@@ -1,0 +1,11 @@
+include ../../components/tag/index.pug
+html
+  head
+    meta(charset="utf-8")
+    title tags
+    link(rel="stylesheet" href="../style.css" media="screen")
+  body
+    h1 tags
+    +tag('1', 'dog')
+    +tag('2', 'cat')
+    script(defer src="../tags/index.js")
