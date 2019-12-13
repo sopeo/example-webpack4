@@ -42,12 +42,18 @@ glob.sync("**/*.js", {
 
 module.exports = [
   {
+    devServer: {
+      host: 'localhost',
+      disableHostCheck: true
+    }
+  },
+  {
     entry: './src/index.js',
     output: {
       filename: 'app.js',
       path: path.resolve(__dirname, 'dist')
     },
-  
+
     // 最適化オプションを上書き
     optimization: {
       minimizer: [
@@ -55,7 +61,7 @@ module.exports = [
         new OptimizeCssAssetsPlugin({})
       ]
     },
-  
+
     module: {
       rules: [
         // pug-loaderの設定
@@ -70,7 +76,7 @@ module.exports = [
             }
           ]
         },
-  
+
         // babel-loaderの設定
         {
           test: /\.js$/,
@@ -84,7 +90,7 @@ module.exports = [
           ],
           exclude: /node_modules/,
         },
-  
+
         // css/sass-loaderの設定
         {
           test: /\.(sa|sc|c)ss$/,
@@ -116,7 +122,7 @@ module.exports = [
       ]
     },
     module: {
-      rules: [  
+      rules: [
         // babel-loaderの設定
         {
           test: /\.js$/,
